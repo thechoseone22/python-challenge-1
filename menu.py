@@ -118,7 +118,7 @@ while place_order:
                     }
                     i += 1
             # 2. Ask customer to input menu item number
-            menu_selection = input("Please select what menu item number you would like")
+            menu_selection = input("Please select what menu item number you would like: ")
 
             # 3. Check if the customer typed a number
             if menu_selection.isdigit():
@@ -187,7 +187,7 @@ while place_order:
 
                 # Tell the customer to try again     
 else:  
-     print("Please try to order again. You did not enter a valid input")
+                print("Please try to order again. You did not enter a valid input")
 
 # Print out the customer's order
 print("This is what we are preparing for you.\n")
@@ -199,11 +199,11 @@ print("Item name                 | Price  | Quantity")
 print("--------------------------|--------|----------")
 
 # 6. Loop through the items in the customer's order
-for menu_selection in order_list:
+for i in range(len(order_list)):
     # 7. Store the dictionary items as variables
-    item_name =
-    price = 
-    quantity =
+    item_name = order_list[i]["Item name"]
+    price = order_list[i]["Price"]
+    quantity = order_list[i]["Quantity"]
 
     # 8. Calculate the number of spaces for formatted printing
 total_width = 45
